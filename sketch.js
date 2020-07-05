@@ -77,7 +77,6 @@ function draw() {
       bow.velocity.y = 0;
       arrow.velocity.x = 7;
       hit = hit + 1;
-      }
     }
 
     if(keyDown("enter")){
@@ -96,6 +95,7 @@ function draw() {
       text("Score : "+ score, displayWidth/2 + 400, displayHeight/4+ 30);
       text("Hits : "+ hit, displayWidth/2 + 400, displayHeight/4);
     }
+}
     else{
       background(backgroundImg);
       arrow.visible = false;
@@ -110,6 +110,7 @@ function draw() {
         image(billNotPaidImg,displayWidth/2,displayHeight/2 - 20);
       }
     }
+
   noStroke();
   textSize(65);
   fill("black");
