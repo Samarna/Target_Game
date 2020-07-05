@@ -95,7 +95,6 @@ function draw() {
       text("Score : "+ score, displayWidth/2 + 400, displayHeight/4+ 30);
       text("Hits : "+ hit, displayWidth/2 + 400, displayHeight/4);
     }
-}
     else{
       background(backgroundImg);
       arrow.visible = false;
