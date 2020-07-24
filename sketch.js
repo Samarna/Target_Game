@@ -64,7 +64,7 @@ function draw() {
 
     edges = createEdgeSprites();
 
-    if(arrow.collide(dartBoard) || arrow.collide(edges[1])){
+   if(arrow.isTouching(dartBoard) || arrow.isTouching(edges[1])){
       arrow.velocityX = 0;
       arrow.changeImage("hit");
       if(arrow.collide(dartBoard)){
@@ -103,10 +103,16 @@ function draw() {
         winMusic.play();
         image(winImg,displayWidth/2,displayHeight/2 - 100);
         image(billPaidImg,displayWidth/2, displayHeight/2 - 20);
+        if(!winMusic.isPlaying()){ 
+          winMusic.play();
+        }
       }else{
         loseMusic.play();
         image(loseImg,displayWidth/2,displayHeight/2 + 100);
         image(billNotPaidImg,displayWidth/2,displayHeight/2 - 20);
+        if(!loseMusic.isPlaying()){ 
+          loseMusic.play();
+        }
       }
     }
 
