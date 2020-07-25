@@ -63,13 +63,13 @@ class Form{
         this.b.position(displayWidth/2 -230,displayHeight/3 - 10); 
         this.c.html("wallet at the gym! What are you gonna do?!");
         this.c.position(displayWidth/2 - 230, displayHeight/3 + 30); //
-        this.d.html("Luckly, the cashier has an idea. He tells you ");
+        this.d.html("Luckily, the cashier has an idea. He tells you ");
         this.d.position(displayWidth/2 - 230, displayHeight/3 + 70); //
         this.e.html("that if you are able to get the amount in the ");
         this.e.position(displayWidth/2 - 230, displayHeight/3 + 110); //
         this.f.html("bill as your score in the target game in just ");
         this.f.position(displayWidth/2 - 230, displayHeight/3 +150); //
-        this.g.html("5 throws, you don't have to pay the bill.");
+        this.g.html("8 throws, you don't have to pay the bill.");
         this.g.position(displayWidth/2 - 230,displayHeight/3 + 190);//
         this.ques.html("Will you be able to do it ? There is only one way to find out........");
         this.ques.position(displayWidth/2 - 330,displayHeight/3 + 230);//
