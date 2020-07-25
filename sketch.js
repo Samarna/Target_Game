@@ -60,7 +60,7 @@ function draw() {
     image(dartBoardImg,displayWidth/2 + 400,displayHeight/2- 20);
     textSize(25);
     fill("black");
-    text("You need to earn 200 points in 4 throws to go home without paying....All The Best!!",displayWidth/2 - 450,displayHeight/2 - 260);
+    text("You need to earn 400 points in 8 throws to go home without paying....All The Best!!",displayWidth/2 - 450,displayHeight/2 - 260);
 
     edges = createEdgeSprites();
 
