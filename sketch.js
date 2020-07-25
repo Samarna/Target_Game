@@ -74,12 +74,12 @@ function draw() {
 
     if(keyIsDown(32) && (arrow.x === bow.x )){
       shotMusic.play();
-      bow.velocity.y = 0;
-      arrow.velocity.x = 7;
+      bow.velocityY = 0;
+      arrow.velocityX = 7; 
       hit = hit + 1;
     }
 
-    if(keyDown("enter")){
+    if(keyDown("enter") && arrow.velocityX === 0){ {
       arrow.x = bow.x;
       arrow.y = bow.y;
       bow.velocityY = 10;
@@ -103,16 +103,12 @@ function draw() {
         winMusic.play();
         image(winImg,displayWidth/2,displayHeight/2 - 100);
         image(billPaidImg,displayWidth/2, displayHeight/2 - 20);
-        if(!winMusic.isPlaying()){ 
-          winMusic.play();
-        }
+        winMusic.play();
       }else{
         loseMusic.play();
         image(loseImg,displayWidth/2,displayHeight/2 + 100);
         image(billNotPaidImg,displayWidth/2,displayHeight/2 - 20);
-        if(!loseMusic.isPlaying()){ 
-          loseMusic.play();
-        }
+        loseMusic.play();
       }
     }
 
