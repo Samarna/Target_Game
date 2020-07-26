@@ -100,15 +100,13 @@ function draw() {
       arrow.visible = false;
       bow.visible = false;
       if(score === 400){
-        winMusic.play();
+        if(!winMusic.isPlaying()){ winMusic.play(); }
         image(winImg,displayWidth/2,displayHeight/2 - 100);
         image(billPaidImg,displayWidth/2, displayHeight/2 - 20);
-        winMusic.play();
       }else{
-        loseMusic.play();
+        if(!loseMusic.isPlaying()){ loseMusic.play(); }
         image(loseImg,displayWidth/2,displayHeight/2 + 100);
         image(billNotPaidImg,displayWidth/2,displayHeight/2 - 20);
-        loseMusic.play();
       }
     }
 
