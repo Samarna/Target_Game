@@ -79,7 +79,7 @@ function draw() {
       hit = hit + 1;
     }
 
-    if(keyDown("enter") && arrow.velocityX === 0){ {
+    if(keyDown("enter") && arrow.velocityX === 0) {
       arrow.x = bow.x;
       arrow.y = bow.y;
       bow.velocityY = 10;
